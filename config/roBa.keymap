@@ -57,10 +57,10 @@
             label = "NEW_MACRO";
         };
 
-        att: att {
+        kakko: att {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INT_MUHENKAN &kp AT>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
             label = "ATT";
         };
     };
@@ -81,10 +81,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R           &kp T                                                       &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F           &kp G        &kp LS(LG(S))             &kp RS(RG(S))        &kp H        &kp J  &lt 5 K    &kp L    &kp MINUS
-&kp Z      &kp X         &kp C         &kp V           &kp B        &kp INT_HENKAN            &kp INTERNATIONAL_5  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE        &lt 2 ENTER                             &kp DEL
+&kp Q      &kp W         &kp E         &kp R           &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F           &kp G        &kp LS(LG(S))             &kakko         &kp H        &kp J  &lt 5 K    &kp L    &kp MINUS
+&kp Z      &kp X         &kp C         &kp V           &kp B        &kp LC(SPACE)             &kp RG(RS(S))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -140,7 +140,7 @@
         bt {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
