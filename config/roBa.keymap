@@ -82,7 +82,7 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R           &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F           &kp G        &kp LS(LG(S))             &kp MINUS      &kp H        &kp J  &lt 5 K    &kp L    &kp MINUS
+&kp A      &kp S         &kp D         &kp F           &kp G        &kp LS(LG(S))             &kp RS(RG(S))  &kp H        &kp J  &lt 5 K    &kp L    &kp MINUS
 &kp Z      &kp X         &kp C         &kp V           &kp B        &kp COLON                 &hankaku_at    &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
@@ -123,7 +123,7 @@
             bindings = <
 &none  &none  &none  &none  &none                                &none      &trans     &none      &none     &none
 &none  &none  &none  &none  &none  &none      &none              &none      &mkp MB1   &mkp MB3   &mkp MB2  &kp RA(LEFT)
-&none  &none  &none  &none  &none  &none      &kp K_APPLICATION  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none     &none
+&none  &none  &none  &none  &none  &none      &kp K_APPLICATION  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none     &kp RG(RS(S))
 &none  &none  &none  &none  &none  &none      &none              &none                                      &none
             >;
         };
