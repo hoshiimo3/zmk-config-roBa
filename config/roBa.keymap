@@ -109,7 +109,7 @@
 &kp KP_N0        &zerozero  &kp KP_DOT       &trans           &trans         &trans                       &trans             &trans                                                              &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(UP_ARROW) DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         ARROW {
